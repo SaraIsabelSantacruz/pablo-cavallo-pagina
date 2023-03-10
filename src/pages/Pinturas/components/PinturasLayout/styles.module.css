@@ -1,0 +1,47 @@
+.portada {
+  padding: 0 20px 0 25px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.imagen-portada {
+  width: 100%;
+  opacity: 1;
+  animation: show-image 3s ease-in-out both;
+}
+
+.texto-imagen {
+  text-align: center;
+  letter-spacing: 11px;
+  font-size: 20px;
+  font-weight: 600;
+  animation: show-text-navbar 1.5s 1s ease-in both;
+}
+
+@keyframes show-image {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes show-text-navbar {
+  from {
+    clip-path: polygon(1% 0%,100% 0%,100% 0%,1% 0%);
+
+  }
+  to {
+    clip-path: polygon(1% 0%,100% 0%,100% 100%,0% 100%);
+  }
+}
+
+@media (max-width: 1032px) {
+  .texto-imagen {
+    letter-spacing: 4px;
+    font-size: 16px;
+  }
+}
+

@@ -1,0 +1,76 @@
+.portada-container {
+  background-color: papayawhip;
+}
+
+.video-container {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.overlay-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(6, 56, 82, 0.5);
+  width: 100vw;
+  height: 100vh;
+}
+
+.name-container {
+  position: absolute;
+  top: 0;
+  margin: 20px;
+  z-index: 3;
+  right: 163px;
+  display: flex;
+}
+
+.artist-name {
+  font-size: 40px;
+  font-weight: 400;
+  color: #e5d2c6;
+  margin: 0px;
+  letter-spacing: 18px;
+}
+
+.left {
+  animation: left-to-right 3s;
+}
+
+.right {
+  margin-left: 35px;
+  animation:  top-to-bottom 2s 5s linear both;
+}
+
+@keyframes left-to-right {
+  from {
+    clip-path: polygon(1% 0%, 1% 0%, 0% 100%, 0% 100%);
+  }
+  to {
+    clip-path: polygon(1% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
+
+@keyframes top-to-bottom {
+  from {
+    clip-path: polygon(1% 0%,100% 0%,100% 0%,1% 0%);
+
+  }
+  to {
+    clip-path: polygon(1% 0%,100% 0%,100% 100%,0% 100%);
+  }
+}
+
+
+@media (max-width: 1032px) {
+  .artist-name {
+    font-size: 36px;
+  }
+
+  .name-container {
+    right: 60px;
+  }
+}

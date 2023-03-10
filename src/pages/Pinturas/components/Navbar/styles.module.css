@@ -1,0 +1,113 @@
+.menu-pinturas {
+  width: 263px;
+  height: 100vh;
+  background-color: #ffffff00;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 20px;
+}
+
+.menu-pinturas-color {
+  position: absolute;
+  padding: 0 20px;
+  width: 245px;
+  height: 100vh;
+  background-color: #e5d2c654;
+  border-bottom-right-radius: 5px;
+  box-shadow: -8px 12px 11px 13px #e5d2c654;
+  animation: show-navbar 2s 2.5s ease-in both,
+    opacity-navbar 2s 2s cubic-bezier(0.47, 0.04, 0.82, 0.62) both;
+}
+
+.title-menu {
+  font-weight: 400;
+  letter-spacing: 9px;
+  font-size: 30px;
+  text-decoration: none;
+  color: black;
+  margin: 30px 0;
+  cursor: pointer;
+  animation: show-text-navbar 1.5s 1s ease-in both;
+}
+
+.title-menu::before {
+  content: "";
+  clip-path: polygon(1% 50%, 100% 100%, 100% 0%);
+  background: black;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 20px;
+  animation: triangle-animation 2s 1.5s ease-in both;
+}
+
+.menu-items {
+  text-decoration: none;
+  color: black;
+  font-size: 19px;
+  font-weight: 300;
+  margin: 30px 0;
+  letter-spacing: 10px;
+  animation: show-text-navbar 1.5s 1s ease-in both;
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .title-menu {
+    font-size: 19px;
+  }
+
+  .title-menu::before {
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+  }
+
+  .menu-items {
+    text-align: center;
+  }
+
+  .menu-pinturas {
+    width: 200px;
+  }
+
+  .menu-pinturas-color {
+    width: 198px;
+  }
+}
+
+@keyframes show-navbar {
+  from {
+    height: 0px;
+  }
+  to {
+    height: 100vh;
+  }
+}
+
+@keyframes opacity-navbar {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+}
+
+@keyframes show-text-navbar {
+  from {
+    clip-path: polygon(1% 0%, 100% 0%, 100% 0%, 1% 0%);
+  }
+  to {
+    clip-path: polygon(1% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
+
+@keyframes triangle-animation {
+  to {
+    clip-path: polygon(100% 0%, 100% 100%, 0% 50%);
+  }
+  from {
+    clip-path: polygon(100% 0%, 100% 100%, 100% 0%);
+  }
+}
