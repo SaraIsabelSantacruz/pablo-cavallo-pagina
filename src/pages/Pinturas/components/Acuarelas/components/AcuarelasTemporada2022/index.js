@@ -3,7 +3,7 @@ import Carrusel from "../Carrousell";
 import { ACUARELAS, DESCRIPCIONES } from "./constants";
 
 const ImportImages = ACUARELAS.map(acuarela => {
-  return import(`../../../../../../assets/2021/${acuarela}`)
+  return import(`../../../../../../assets/2022/${acuarela}`)
   .then(module => module.default)
   .then(src => src);
 });

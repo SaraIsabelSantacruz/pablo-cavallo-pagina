@@ -1,5 +1,5 @@
 .menu-pinturas {
-  width: 263px;
+  width: 20%;
   height: 100vh;
   background-color: #ffffff00;
   display: flex;
@@ -22,7 +22,6 @@
 
 .title-menu {
   font-weight: 400;
-  letter-spacing: 9px;
   font-size: 30px;
   text-decoration: none;
   color: black;
@@ -48,7 +47,6 @@
   font-size: 19px;
   font-weight: 300;
   margin: 30px 0;
-  letter-spacing: 10px;
   animation: show-text-navbar 1.5s 1s ease-in both;
 }
 

@@ -1,31 +1,22 @@
 .container-image-selected {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  height: calc(100vh - 115px);
-  justify-content: center;
 }
 
 .container-selected {
-  width: 800px;
-  margin: 0 auto;
-  height: 600px;
+  width: 850px;
+  margin: 30px auto 20px auto;
+  height: 575px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  
 }
 
 .image-text {
-  margin: 10px 0 0 0;
+  margin: 0 0 22px 0;
   text-align: center;
-  letter-spacing: 13px;
 }
 
 .container-scroll {
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 0;
   white-space: nowrap;
   width: calc(100vw - 300px);
   overflow: scroll;
@@ -34,7 +25,7 @@
 
 .image-to-select {
   width: 115px;
-  height: 115px;
+  height: 70px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
