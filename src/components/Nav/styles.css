@@ -105,8 +105,44 @@
   }
 }
 
-@media (max-width: 1032px) {
+@media (min-width: 320px) and (max-width: 1024px) {
   .header {
-    width: 360px;
+    width: 100%;
+    position: relative;
+    background-color: transparent;
+  }
+
+  .menu-items {
+    color: black;
+    margin: 20px;
+    text-align: left;
+  }
+
+  .menu-container {
+    margin-top: 40px;
+  }
+
+  .item-0 {
+    animation: show-text-navbar 1s 4s ease-in both;
+  }
+  
+  .item-1 {
+    animation: show-text-navbar 1s 5s ease-in both;
+  }
+  
+  .item-2 {
+    animation: show-text-navbar 1s 6s ease-in both;
+  }
+  
+  .item-3 {
+    animation: show-text-navbar 1s 7s ease-in both;
+  }
+  
+  .item-4 {
+    animation: show-text-navbar 1s 8s ease-in both;
+  }
+  
+  .item-5 {
+    animation: show-text-navbar 1s 9s ease-in both;
   }
 }

@@ -64,6 +64,26 @@
   }
 }
 
+@media (min-width: 320px) and (max-width: 1024px) {
+  .portada-container {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: transparent;
+  }
+
+  .overlay-content {
+    display: none;
+  }
+
+  .video-container {
+    position: initial;
+    width: 100%;
+  }
+
+	.name-container {
+		display: none;
+	}
+}
 
 @media (max-width: 1032px) {
   .artist-name {
