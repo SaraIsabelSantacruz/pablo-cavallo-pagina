@@ -10,6 +10,11 @@
 	background-size: contain;
 }
 
+.detalle-abierto {
+	height: 100vh;
+  overflow: hidden;
+}
+
 @media (min-width: 320px) and (max-width: 1024px) {
 	.container-gallery {
 		display: flex;

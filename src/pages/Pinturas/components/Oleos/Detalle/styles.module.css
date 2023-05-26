@@ -1,0 +1,31 @@
+button {
+	background-color: transparent;
+	border: none;
+}
+
+.detalle-container {
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	background-color: #000000f2;
+}
+
+.imagen-detalle {
+	width: 100%;
+}
+
+.contenedor-imagen {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.close {
+	width: 30px;
+    height: 30px;
+    color: white;
+    margin-bottom: 20px;
+}

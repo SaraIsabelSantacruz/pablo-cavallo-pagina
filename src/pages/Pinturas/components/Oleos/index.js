@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import Carrusel from "./Carrousell";
 import { OLEOS, DESCRIPCIONES } from "./constants";
 import styles from './styles.module.css';
+import { Link, Outlet, useParams } from 'react-router-dom';
+import cn from 'classnames';
 
 const ImportImages = OLEOS.map(oleo => {
   return import(`../../../../assets/oleo/${oleo}`)
@@ -11,7 +13,7 @@ const ImportImages = OLEOS.map(oleo => {
 
 function Oleos() {
   const [urlImages, setUrlImages] = useState([]);
-
+  const { pinturaId } = useParams();
   useEffect(() => {
     Promise.all(ImportImages).then(function(results) {
       setUrlImages(results);
@@ -20,12 +22,15 @@ function Oleos() {
 
   return (
     <>
-      <div className={styles['container-gallery']}>
+      <Outlet />
+      <div className={cn(styles['container-gallery'], pinturaId && styles['detalle-abierto'])}>
         {
           urlImages.map(image => (
-            <div key={image} className={styles.image} style={{
+            <Link to={image.split('/')[3]} key={image}>
+              <div className={styles.image} style={{
               backgroundImage: 'url(' + image + ')'
             }}></div>
+            </Link>
           ))
         }
       </div>
