@@ -50,6 +50,27 @@
   animation: show-text-navbar 1.5s 1s ease-in both;
 }
 
+@media (min-width: 320px) and (max-width: 1024px) {
+  .menu-pinturas-color {
+    display: none;
+  }
+
+  .menu-pinturas {
+    width: 100%;
+    padding: 0;
+  }
+
+  .title-menu {
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu-items {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 @media (min-width: 1024px) and (max-width: 1280px) {
   .title-menu {
     font-size: 19px;
