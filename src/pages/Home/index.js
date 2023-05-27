@@ -8,8 +8,9 @@ function Home() {
   <div className='portada-container'>
     <Nav/>
     <div className='name-container'>
-      <h1 className='artist-name left'>PABLO</h1>
-      <h1 className='artist-name right'>CAVALLO</h1>
+    <h1 className='artist-name left mobile'>PABLO CAVALLO</h1>
+      <h1 className='artist-name left desktop'>PABLO</h1>
+      <h1 className='artist-name right desktop'>CAVALLO</h1>
     </div>
     <video
       className='video-container'

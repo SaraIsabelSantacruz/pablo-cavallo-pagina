@@ -7,7 +7,7 @@
   z-index: 1;
   right: 0;
   width: 470px;
-  animation: show-navbar 3s 2s cubic-bezier(.47,.04,.82,.62) both;
+  animation: show-navbar 1s 1s cubic-bezier(.47,.04,.82,.62) both;
 }
 
 .menu-container {
@@ -30,27 +30,27 @@
 }
 
 .item-0 {
-  animation: show-text-navbar 1s 8s ease-in both;
+  animation: show-text-navbar 1s 3s ease-in both;
 }
 
 .item-1 {
-  animation: show-text-navbar 1s 9s ease-in both;
+  animation: show-text-navbar 1s 4s ease-in both;
 }
 
 .item-2 {
-  animation: show-text-navbar 1s 10s ease-in both;
+  animation: show-text-navbar 1s 5s ease-in both;
 }
 
 .item-3 {
-  animation: show-text-navbar 1s 11s ease-in both;
+  animation: show-text-navbar 1s 6s ease-in both;
 }
 
 .item-4 {
-  animation: show-text-navbar 1s 12s ease-in both;
+  animation: show-text-navbar 1s 7s ease-in both;
 }
 
 .item-5 {
-  animation: show-text-navbar 1s 13s ease-in both;
+  animation: show-text-navbar 1s 8s ease-in both;
 }
 
 .link a:hover {
@@ -110,40 +110,43 @@
     width: 100%;
     position: relative;
     background-color: transparent;
+    box-shadow: none;
   }
 
   .menu-items {
     color: black;
     margin: 20px;
-    text-align: left;
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 5px;
   }
 
   .menu-container {
-    margin-top: 40px;
+    margin-top: 0;
   }
 
   .item-0 {
-    animation: show-text-navbar 1s 4s ease-in both;
+    animation: show-text-navbar 1s 2s ease-in both;
   }
   
   .item-1 {
-    animation: show-text-navbar 1s 5s ease-in both;
+    animation: show-text-navbar 1s 3s ease-in both;
   }
   
   .item-2 {
-    animation: show-text-navbar 1s 6s ease-in both;
+    animation: show-text-navbar 1s 4s ease-in both;
   }
   
   .item-3 {
-    animation: show-text-navbar 1s 7s ease-in both;
+    animation: show-text-navbar 1s 5s ease-in both;
   }
   
   .item-4 {
-    animation: show-text-navbar 1s 8s ease-in both;
+    animation: show-text-navbar 1s 6s ease-in both;
   }
   
   .item-5 {
-    animation: show-text-navbar 1s 9s ease-in both;
+    animation: show-text-navbar 1s 7s ease-in both;
   }
 
   @keyframes show-navbar {

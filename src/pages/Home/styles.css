@@ -42,7 +42,7 @@
 
 .right {
   margin-left: 35px;
-  animation:  top-to-bottom 2s 5s linear both;
+  animation:  top-to-bottom 2s 2s linear both;
 }
 
 @keyframes left-to-right {
@@ -64,7 +64,19 @@
   }
 }
 
+.mobile {
+  display: none;
+}
+
 @media (min-width: 320px) and (max-width: 1024px) {
+  .mobile {
+    display: block;
+  }
+
+  .desktop {
+    display: none;
+  }
+
   .portada-container {
     display: flex;
     flex-direction: column-reverse;
@@ -81,16 +93,16 @@
   }
 
 	.name-container {
-		display: none;
+		position: relative;
+    font-size: 25px;
+    top: 0;
+    left: 0;
+    margin: 40px auto 20px;
+    letter-spacing: 5px;
 	}
-}
 
-@media (max-width: 1032px) {
   .artist-name {
-    font-size: 36px;
-  }
-
-  .name-container {
-    right: 60px;
+    font-size: 25px;
+    letter-spacing: 5px;
   }
 }
