@@ -145,4 +145,13 @@
   .item-5 {
     animation: show-text-navbar 1s 9s ease-in both;
   }
+
+  @keyframes show-navbar {
+    from {
+      height: 0;
+    }
+    to {
+      height: initial;
+    }
+  }
 }
