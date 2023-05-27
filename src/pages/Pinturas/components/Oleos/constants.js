@@ -34,12 +34,10 @@ export const OLEOS = [
   '33.jpg',
   '34.jpg',
   '35.jpg',
-  '36.jpg',
-  '37.jpg'
+  '36.jpg'
 ]
 
 export const DESCRIPCIONES = [
-  'Acuarela S/papel 300 grs. 25 x 32 cm',
   'Acuarela S/papel 300 grs. 25 x 32 cm',
   'Acuarela S/papel 300 grs. 25 x 32 cm',
   'Acuarela S/papel 300 grs. 25 x 32 cm',

@@ -52,6 +52,14 @@
   margin: 15px 15px 15px 0;
 }
 
+.imagen {
+  display: none;
+}
+
+.gray {
+  background-color: #80808059;
+}
+
 @media (min-width: 320px) and (max-width: 1024px) {
   .container-carrousell {
     display: none;

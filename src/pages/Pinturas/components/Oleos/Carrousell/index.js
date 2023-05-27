@@ -1,13 +1,16 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Fragment } from 'react';
 import styles from './styles.module.css';
+import cn from 'classnames';
 
 function Carrusel({items, descriptions}) {
   const [itemSelected, setItemSelected] = useState('');
+  const [load, setLoad] = useState(true);
   const [itemsToShow, setItemsToShow] = useState([]);
 
   useEffect(() => {
     const newItems = items.map((item, index) => ({
       url:item,
+      id: index,
       description: descriptions[index]
     }))
     setItemsToShow(newItems);
@@ -38,11 +41,14 @@ function Carrusel({items, descriptions}) {
         <p className={styles['image-text']}>Acuarela S/papel 300 grs. 25 x 32 cm </p>
       </div>
       <div className={styles['container-scroll']}>
-        {items.map((item, index) => {
+        {items.map((item) => {
           return (
-            <button key={item} style={{
-              backgroundImage: 'url(' + item + ')'
-            }} onClick={() => handleClick(item)} className={styles["image-to-select"]}> </button>);
+            <Fragment key={item} >
+              <img src={item} alt='imagen-descripion'  className={styles.imagen} loading='lasy'/>
+              <button loading='lasy' style={{
+                backgroundImage: 'url(' + item + ')'
+              }} onClick={() => handleClick(item)} className={cn(styles["image-to-select"], load && styles.gray)}></button>
+            </Fragment>);
           })}
       </div>
     </div>
