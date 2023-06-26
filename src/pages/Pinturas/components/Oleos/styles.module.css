@@ -2,6 +2,10 @@
 	display: none;
 }
 
+.my-swiper-container {
+	display: none;
+}
+
 .image {
 	width: 100px;
 	height: 100px;
@@ -19,6 +23,10 @@
 	background-color: #80808059;
 }
 
+.oleos-container {
+	position: relative;
+}
+
 @media (min-width: 320px) and (max-width: 1024px) {
 	.container-gallery {
 		display: flex;
@@ -29,5 +37,23 @@
     justify-content: space-around;
     max-width: 530px;
     margin: 0 auto;
+	}
+
+	.my-swiper-container {
+		display: block;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		background-color: #d8d8d8e6;
+	}
+
+	.image-swiper {
+		width: 100%;
+    	height: 100vh;
+    	background-position: center;
+    	background-repeat: no-repeat;
+    	background-size: contain;
 	}
 }

@@ -1,19 +1,64 @@
+.deactive {
+  display: none;
+}
+
+.active {
+  display: block;
+  background-color: #ffffffa8;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.active-button {
+  filter: blur(1px);
+}
+
 .container-carrousell {
   display: flex;
   flex-direction: column;
 }
 
+.dont-show {
+  background-color: #ffffffc9;
+}
+
+.set-back {
+  z-index: -1;
+}
+
+.show-all-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 95%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 20;
+}
+
+.item-selected {
+  position: relative;
+}
+
 .container-selected {
+  cursor: pointer;
+  width: 100%;
+  display: block;
   max-width: 850px;
   margin: 30px auto 20px auto;
   height: 575px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  position: relative;
 }
 
 .chevron {
+  cursor: pointer;
   width: 100px;
 }
 
@@ -36,10 +81,12 @@
 .container-scroll {
   white-space: nowrap;
   overflow: scroll;
+  scroll-behavior: smooth;
   background-color: #ccc;
 }
 
 .image-to-select {
+  position: relative;
   width: 115px;
   height: 70px;
   background-position: center;
@@ -50,6 +97,7 @@
   cursor: pointer;
   display: inline-block;
   margin: 15px 15px 15px 0;
+  padding: 0;
 }
 
 .imagen {

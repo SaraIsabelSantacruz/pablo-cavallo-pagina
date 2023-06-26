@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import { register } from 'swiper/element/bundle';
 
 import Home from "./pages/Home";
 import Pinturas from "./pages/Pinturas";
@@ -11,8 +12,13 @@ import './app.css'
 import PinturasLayout from "./pages/Pinturas/components/PinturasLayout";
 import Oleos from "./pages/Pinturas/components/Oleos";
 import Detalle from "./pages/Pinturas/components/Oleos/Detalle";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    register();
+  }, [])
+
   return (
     <Routes>
       <Route path="/" element={<Home />} />
